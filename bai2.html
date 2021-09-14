@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function check(n,ar){
+    for(let i=0;i<ar.length;i++){
+        if(ar[i]===n){
+            return ('Vị trí của '+n+' trong mảng là: '+i)
+        }
+    }
+    return ('Trong mảng không có số: '+n)
+}
+let ar=[1,2,3,4,5,6,7,8,9]
+let n=prompt('Nhập số cần ')
+    n=parseInt(n)
+    alert(check(n,ar))
+</script>
+</body>
+</html>

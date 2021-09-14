@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function check_vowel(str){
+      let vowel=['a','o','e','u','i']
+      let total=0
+      for(let i=0;i<vowel.length;i++){
+          for (let j=0;j<str.length;j++){
+              if (vowel[i]===str[j]){
+                  total++
+              }
+          }
+      }
+      if (total===0){
+          return false
+      } else {
+          return total
+      }
+  }
+  let str=prompt('Nhập từ bạn muốn kiểm tra: ')
+  if (check_vowel(str)===false){
+      alert('Không có nguyên âm nào')
+  }else {
+      alert('Trong chuỗi có: '+check_vowel(str) +' nguyên âm')
+  }
+</script>
+</body>
+</html>
