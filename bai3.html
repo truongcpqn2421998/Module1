@@ -7,8 +7,8 @@
 <body>
 <script>
   function check_vowel(str){
-      let vowel=['a','o','e','u','i']
-      let total=0
+      let vowel=['a','o','e','u','i'];
+      let total=0;
       for(let i=0;i<vowel.length;i++){
           for (let j=0;j<str.length;j++){
               if (vowel[i]===str[j]){
@@ -22,11 +22,11 @@
           return total
       }
   }
-  let str=prompt('Nhập từ bạn muốn kiểm tra: ')
+  let str=prompt('Nhập từ bạn muốn kiểm tra: ');
   if (check_vowel(str)===false){
-      alert('Không có nguyên âm nào')
+      alert('Không có nguyên âm nào');
   }else {
-      alert('Trong chuỗi có: '+check_vowel(str) +' nguyên âm')
+      alert('Trong chuỗi có: '+check_vowel(str) +' nguyên âm');
   }
 </script>
 </body>
